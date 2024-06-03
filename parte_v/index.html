@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main>
+    </main>
+
+    <script>
+        const cardsData = [
+            {
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAEu2aeMPHVuk6cXTtf2pEDzGGKDaLTIRSMQ&s",
+                "title": "Galo Barcelos",
+                "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat quo quidem!",
+                "more": "https://www.tripadvisor.pt/Attraction_Review-g189170-d24032174-Reviews-Galo_De_Barcelos-Barcelos_Braga_District_Northern_Portugal.html"
+            },
+            {
+                "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/91/ca/0c/cruzeiro-do-senhor-do.jpg?w=1000&h=-1&s=1",
+                "title": "Cruzeiro do Senhor do Galo",
+                "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat quo quidem!",
+                "more": "https://www.tripadvisor.pt/Attraction_Review-g189170-d16700497-Reviews-Cruzeiro_do_Senhor_do_Galo-Barcelos_Braga_District_Northern_Portugal.html"
+            },
+            {
+                "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/91/c7/3e/pelourinho-de-barcelos.jpg?w=1000&h=-1&s=1",
+                "title": "Pelourinho",
+                "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat quo quidem!",
+                "more": "https://www.tripadvisor.pt/Attraction_Review-g189170-d16700500-Reviews-Pelourinho_de_Barcelos-Barcelos_Braga_District_Northern_Portugal.html",
+            },
+            {
+                "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/91/7a/ad/monumento-ao-bombeiro.jpg?w=1000&h=-1&s=1",
+                "title": "Monumento ao Bombeiro",
+                "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat quo quidem!",
+                "more": "https://www.tripadvisor.pt/Attraction_Review-g189170-d16700599-Reviews-Monumento_ao_Bombeiro_Voluntario-Barcelos_Braga_District_Northern_Portugal.html"
+            },
+            {
+                "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/91/1e/cf/monumento-aos-alcaides.jpg?w=1000&h=-1&s=1",
+                "title": "Monumento aos Alcaides",
+                "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat quo quidem!",
+                "more": "https://www.tripadvisor.pt/Attraction_Review-g189170-d16701324-Reviews-Monumento_aos_Alcaides_de_Faria-Barcelos_Braga_District_Northern_Portugal.html"
+            },
+            {
+                "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/91/19/75/o-lugar-dos-poetas.jpg?w=1000&h=-1&s=1",
+                "title": "O Lugar dos Poetas",
+                "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat quo quidem!",
+                "more": "https://www.tripadvisor.pt/Attraction_Review-g189170-d16701328-Reviews-O_Lugar_dos_Poetas-Barcelos_Braga_District_Northern_Portugal.html"
+            }
+        ];
+
+        const main = document.querySelector('main');
+
+        cardsData.forEach((d) => {
+            const el = `
+            <div class="card" style="width: 18rem;">
+                <img src="${d.img}" class="card-img-top" alt="${d.title}">
+                <div class="card-body">
+                    <h5 class="card-title">${d.title}</h5>
+                    <p class="card-text">${d.text}</p>
+                    <a href="${d.more}" target="_blank" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>`
+
+            main.innerHTML += el;
+        })
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

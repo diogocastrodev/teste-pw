@@ -1,0 +1,32 @@
+{
+  "atores": [
+    {
+      "nome": "Tom Cruise",
+      "nascimento": "03/07/1962",
+      "filmes": [
+        {
+          "titulo": "Missão Impossível",
+          "ano": 1996
+        },
+        {
+          "titulo": "Top Gun",
+          "ano": 1986
+        }
+      ]
+    },
+    {
+      "nome": "Brad Pitt",
+      "nascimento": "18/12/1963",
+      "filmes": [
+        {
+          "titulo": "Clube da Luta",
+          "ano": 1999
+        },
+        {
+          "titulo": "Sr. e Sra. Smith",
+          "ano": 2005
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <root>
+     <atores>
+         <nome>Tom Cruise</nome>
+         <nascimento>03/07/1962</nascimento>
+         <filmes>
+             <titulo>Missão Impossível</titulo>
+             <ano>1996</ano>
+         </filmes>
+         <filmes>
+             <titulo>Top Gun</titulo>
+             <ano>1986</ano>
+         </filmes>
+     </atores>
+     <atores>
+         <nome>Brad Pitt</nome>
+         <nascimento>18/12/1963</nascimento>
+         <filmes>
+             <titulo>Clube da Luta</titulo>
+             <ano>1999</ano>
+         </filmes>
+         <filmes>
+             <titulo>Sr. e Sra. Smith</titulo>
+             <ano>2005</ano>
+         </filmes>
+     </atores>
+ </root>
